@@ -1,0 +1,103 @@
+@charset "utf-8";
+.top{
+	height:100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	margin-bottom: 50px;
+	font-family:FZYaoti;
+	font-size:36px;
+	
+}
+.text{
+	color: #333;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 200px;
+	height:60px;
+
+}
+
+.littletitle{
+	margin:230px auto 0px 10px;
+	font-size:24px;
+	font-weight:bold;
+	font-family: FZYaoti;
+	  color:#222222;
+}
+.introduction{
+	font-size:16px;
+	margin:auto 10px;
+	line-height:20px;
+	text-indent: 2em;
+}
+.part1{
+	margin-top: 150px;
+	height:850px;
+}
+.part2{
+	margin-top: 100px;
+	height:500px;
+	margin-bottom: 160px;
+}
+.pic-group{
+	margin-top: 40px;
+	margin-left:40px ;
+    float: left;
+}
+.media-text{
+	width: 600px;
+	height:400px ;
+	background-image:url(../img/text-bg4.png) ;
+	background-repeat: no-repeat;
+	float: right;
+}
+.wenzi{
+	margin:80px 100px auto 150px;
+	font-size:18px;
+	font-family: "微软雅黑";
+	text-indent: 2em;
+}
+.part1-card{  
+    width: 320px;  
+    height: 350px;  
+   
+   margin-left:60px;
+   margin-top: 10px;
+	float: left;  
+	border-radius: 10px;
+}  
+.part1-card img{  
+	position: absolute;
+    border-radius: 10px;
+} 
+.preview{
+	width: 318px;
+	height: 220px;
+	background:#7295A0;
+	
+	opacity: 0.7;
+ filter:alpha(opacity = 70);
+ position: absolute;
+ font-size: 20px;
+ text-align: center;
+ display: none;
+ border-radius: 10px;
+} 
+.part1-card:hover .preview {  
+    display:block;
+     position: absolute;
+}
+ 
+.part1-card  a{
+	color: #000000;
+	text-decoration: none;
+}
+.part1-card a:hover{
+	color:#517491;
+	text-decoration: none;
+}
+.part1-card:hover .littletitle{
+	color:#375868;
+}

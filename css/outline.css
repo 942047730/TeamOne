@@ -1,0 +1,233 @@
+body{
+	margin:0;
+    padding:0;
+    
+	}
+#border2{
+	width: 1200px;
+	height: 1780px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#main {
+  position: relative;
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:1000px;
+
+overflow:hidden;
+height: 62px;
+}
+
+#main li{
+float:left;
+height: 32px;
+font-size:20px ;
+
+display: inline-block;
+  position: relative;
+   cursor: pointer;
+  z-index: 5;
+}
+
+#marker {/*#marker是下划线元素。它也使用绝对定位。并为所有动画设置了0.35秒的动画过渡效果。*/
+  height: 41px;
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color:rgba(182,182,182,0.4)!important; /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=40);
+    margin-bottom: 10px;
+}  
+    
+  /*在鼠标滑过菜单项#main li元素时，根据nth-child来判断当前鼠标滑过哪个菜单项。然后将该菜单项中的子菜单的Y轴位置恢复为0，
+   * 显示下拉菜单，同时根据不同的菜单项来设置translate函数的X方向移动值来移动下划线。*/
+#main li:nth-child(1):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(1):hover ~ #marker {
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+}
+ 
+#main li:nth-child(2):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(2):hover ~ #marker {
+  -webkit-transform: translate(150px, 0);
+  -moz-transform: translate(150px, 0);
+  -ms-transform: translate(150px, 0);
+  transform: translate(150px, 0);
+}
+ 
+#main li:nth-child(3):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(3):hover ~ #marker {
+  -webkit-transform: translate(300px, 0);
+  -moz-transform: translate(300px, 0);
+  -ms-transform: translate(300px, 0);
+  transform: translate(300px, 0);
+}
+ 
+#main li:nth-child(4):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(4):hover ~ #marker {
+  -webkit-transform: translate(450px, 0);
+  -moz-transform: translate(450px, 0);
+  -ms-transform: translate(450px, 0);
+  transform: translate(450px, 0);
+}                 
+
+#main li:nth-child(5):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(5):hover ~ #marker {
+  -webkit-transform: translate(600px, 0);
+  -moz-transform: translate(600px, 0);
+  -ms-transform: translate(600px, 0);
+  transform: translate(600px, 0);
+}    
+
+#main li:nth-child(6):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(6):hover ~ #marker {
+  -webkit-transform: translate(750px, 0);
+  -moz-transform: translate(750px, 0);
+  -ms-transform: translate(750px, 0);
+  transform: translate(750px, 0);
+}    
+
+
+
+
+
+#navie1 #navie2 ul li a:link,a:visited{
+display:block;
+width:150px;
+font-weight:bold;
+color:#B3D7FF;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+height: 20px;
+margin-top:13px;
+
+}
+#navie1 #navie2 ul li a:hover,a:active{
+color:#FFF;
+
+}
+ #slide {
+ 	margin-left: auto;
+ 	margin-right: auto;
+	background-color: #FFF
+	height: 330px;
+	width: 1270px;
+}
+#slide .carousel-inner{
+		width:1270px;
+		height:330px;
+	}
+#slide .carousel-control.left{
+	position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+width: 15%;
+font-size: 20px;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+filter: alpha(opacity=0);
+opacity:0;
+width: 100px;
+}
+#slide .carousel-control.right{
+	margin-left: 1170px;
+top: 0;
+bottom: 0;
+left: 0;
+width: 15%;
+font-size: 20px;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+filter: alpha(opacity=0);
+opacity:0;
+width: 100px;
+}
+#slide .carousel-indicators{
+	margin-left: 0px;
+}
+#navie1{
+	width: 100%;
+	height: 62px;
+	background-color:#B9BBBE;
+	
+}
+#navie2{
+	width: 1263px;
+	height: 62px;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;  
+  background-size: 100% 100%; 
+
+	
+}
+#navie3{
+	width: 910px;
+	height: 62px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+#bottom1{
+	width:100%;
+	height: 40px;
+	background-color:#284D57;
+	padding-top: 10px;
+}
+#bottom2{
+	width: 1263px;
+	height: 30px;
+		background-color:#284D57;
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	
+}

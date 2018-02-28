@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>网站首页</title>
+		<link rel="stylesheet" href="css/styleindex.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+  <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/outline.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  	 <link rel="stylesheet" href="css/accordion.css" />
+   <link rel="stylesheet" type="text/css" href="css/spin.css"/>
+		<link rel="stylesheet" href="css/lightbox.css" /><link rel="stylesheet" href="css/style.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/lightbox.js" ></script>
+		<style>
+			 #qz_item01{ height:600px;display: block; background:url(img/bg3.jpg)  repeat top center fixed;position: relative;}
+	  #qz_item02{ height:600px;display: block; background:url(img/bg3.jpg)}
+	  #qz_item03{ height:630px;display: block; background:url(img/bg3.jpg)}
+	  #qz_item04{ height:780px;display: block; background:url(img/bg3.jpg)}
+      #qz_item05{ height:10px;display: block; background:url(img/bg3.jpg)}
+      
+     
+		.qz_title{display:block;text-align: center;position: relative;margin-left:-2000px; transition:0.7s all; -webkit-transition:0.7s all; -moz-transition:0.7s all; -o-transition:0.7s all;}
+		
+
+		
+		.cur .qz_title{margin-left:0;}
+
+		.qz_titlef{display:block;text-align: center;position: relative;margin-left:-2000px; transition:0.7s all; -webkit-transition:0.7s all; -moz-transition:0.7s all; -o-transition:0.7s all;}
+		.qz_titlef h2{height:50px;line-height:50px;font-size: 36px;color: #fff;}
+		
+		.qz_titlef span{height:2px;width:100px;display: block;background:#3C5464;margin:20px auto;}
+		.cur .qz_titlef{margin-left:0;}
+
+
+		.qz_bg1{display: block;width:1000px;margin:0px auto 0;padding-top:200px;}
+		.qz_bg1 h2{font-size:36px;font-weight: bold;height:50px;line-height: 50px;text-align: center;color: #fff;margin-bottom:20px;letter-spacing:8px;}
+		.qz_bg1 h2 strong{color: #3C5464;}
+	
+		.qz_ser{display: block;margin-top:20px;
+		width: 1200px;
+		height: 300px;
+		}
+
+		.qz_ser li{margin-left: 60px;float: left;width:154px;text-align: center;padding:0 15px;position:relative;margin-top:180px; opacity: 0;transition:1s all; -webkit-transition:1s all; -moz-transition:1s all; -o-transition:1s all;}
+		.qz_ser li img{border-radius: 90px;border:3px solid #fff;margin-bottom:10px;}
+		.qz_ser li img:hover{border:3px solid #3C5464;background: #3C5464;}
+		.qz_ser li h3{height:26px;line-height: 26px;font-size: 16px;font-weight: bold;color: #666;margin-bottom: 5px;}
+		.qz_ser li h3 p{font-size: 14px;line-height: 24px;}
+
+		.cur .qz_ser li.on1{transition-delay:0.5s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on2{transition-delay:1s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on3{transition-delay:1.5s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on4{transition-delay:2s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on5{transition-delay:2.5s;margin-top:0; opacity: 1;}
+
+		.qz_ttab > span{display: block;}
+		.qz_ttab ul.qz_casenav{width:1120px;display: block;text-align: center; opacity: 0;margin-top:-100px; transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_ttab ul.qz_casenav li{text-align:center;height:30px;line-height:30px;font-size:14px;cursor:pointer;color: #666;display: inline-block;*zoom:1;*display: inline;border-radius: 5px;margin:0 10px;padding:0 10px;}
+		.qz_ttab ul.qz_casenav li.active{color:#3C5464;}
+		.qz_contn{width: 1120px;margin:0 auto;display: block;padding:30px 0;}
+		.qz_contnone{display:none;}
+		.qz_caselist{display: block;width:1120px;opacity:0;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_caselist ul{display: block;width:1140px;}
+		.qz_caselist li{width:265px;height:192px;display: block;margin-right:20px;margin-bottom:20px;float: left;position: relative;}
+		.qz_caselist li p{width:265px;height: 192px;display: block;overflow: hidden;}
+		.qz_caselist li img{width:265px;height: 192px;display: block;  transition: 0.4s all; -webkit-transition: 0.4s all; -moz-transition: 0.4s all; -o-transition: 0.4s all;}
+		.qz_caselist li:hover p > img
+			{
+				-webkit-transform: scale(1.2);
+		        -moz-transform: scale(1.2);
+		        -o-transform: scale(1.2);
+		        -ms-transform: scale(1.2);
+			}
+		.qz_caselist li span{background: url(img/iconw.png);width:265px;height:192px;position: absolute;left: 0;top:0;display: none;padding:40px 20px;}
+		.qz_caselist li span h3{color: #fff;font-size: 16px;font-weight: bold;text-align: center;line-height: 24px;}
+		.qz_caselist li span h5{color: #fff;font-size: 12px;line-height: 20px;text-align: center;margin: 10px 0;}
+		.qz_caselist li span img{width: 40px;height:40px;margin:0 auto;border:2px solid #fff;border-radius: 90px;}
+		
+
+		.cur .qz_ttab ul.qz_casenav{opacity:1;margin-top:0;transition-delay:0.8s;margin:40px auto 20px;}
+		.cur .qz_caselist{transition-delay:1.5s;opacity:1;}
+
+
+
+		.qz_about{display:block;width:1120px;margin-top: 50px;overflow: hidden;}
+		.qz_about img{float: left;width:560px;margin-right:20px;margin-left:-1000px;position: relative;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_about span{float:right;width:540px;margin-right:-1500px;position: relative;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_about span h3{line-height:30px;font-size: 24px;margin-bottom:10px;}
+		.qz_about span p{line-height: 26px;margin-bottom: 30px;}
+
+		.cur .qz_about img{margin-left:0;transition-delay:1s;opacity:1;}
+		.cur .qz_about span{margin-right:0;transition-delay:1s;opacity:1;}
+
+		.qz_newslist{display: block;width:1240px;margin-top:50px;opacity:0;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.cur .qz_newslist{opacity:1;transition-delay:1s;}
+		
+
+		.qz_cont{display: block;margin-top:50px;}
+		.qz_contc{display: block;text-align: center;border-bottom:1px solid #fff;margin:0px auto 30px;width:800px;padding-bottom:30px;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;opacity:0;}
+
+		.cur .qz_contc{opacity:1;transition-delay:0s;}
+
+		.qz_contc li{display: inline-block;text-align: center;margin:0 20px;width:200px;height:150px;color: #fff;}
+		.qz_contc li img{height:30px;width:30px;display: block;margin:0 auto 20px;}
+		
+		.qz_contc li strong{display: block;font-size:18px;line-height: 30px;}
+
+		.qz_contb{margin:0 auto;width:800px;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;opacity:0;}
+		.cur .qz_contb{margin:0 auto;opacity:1;transition-delay:1s;}
+		.qz_contb h3{display: block;text-align: center;font-size: 28px;color: #fff;margin-bottom:40px;}
+		.qz_contb span{width:840px;display: block;margin-bottom:20px;}
+		.qz_contb span input{width:358px;float: left;margin-right:40px;border:0;border:1px solid #f1f1f1;font-size: 14px;padding:10px;height:24px;line-height: 24px;border-radius:5px;}
+		.qz_contb textarea{width:778px;border:1px solid #f1f1f1;padding:10px;line-height:24px;border-radius: 5px;}
+		.qz_contb button{display: block;width:150px;border:0;border-radius: 5px;margin:20px auto;height:40px;line-height: 40px;cursor: pointer;color: #fff;background: #3C5464;}
+
+		.qz_lookj{display: block;width:150px;background:#3C5464;height:40px;line-height: 40px;color: #fff;text-align: center;border-radius: 10px;font-size: 16px;margin:0 auto;}
+		.qz_lookj:hover{color: #fff;}
+
+		</style>
+		
+	</head>
+	<body >
+		
+	
+	<div id="qz_item01">
+	<div id="headpic1">
+  	<div id="headpic2">
+  		
+  	<!--头部3D播放图片-->
+  		<div class="wrap">
+			<section class="cube-container">
+			  <div id="cube">
+			    <figure class="front">
+			      <div class="col-md-8 col-sm-12" style="background-image: url('img/2.jpg');"></div>
+			      <div class="col-md-4" style="height:inherit;display:inline-block;">
+						  <article>
+						<!--  <img src="img/puzzle.png " width="50" height="50" alt="logo" class="mb-4">
+                        	LOGO
+                        -->  
+				
+			<div id="studioname2">妙一·工作坊</div>
+			
+						  </article>  
+			       </div>
+			    </figure>
+			    <figure class="back">
+			    <div class="col-md-8" style="background-image:url('img/1.jpg');"></div>
+			      <div class="col-md-4" style="height:inherit;display:inline-block;">
+						  <article>
+						 <!--    <img src="img/profile.svg" alt="logo" class="mb-4">-->
+
+			        <p class="text-center">用设计的的力量使客户实现商业目标<br />用设计的力量驱动企业的持续发展</p>
+						  </article>
+			      </div>
+			    </figure>
+			    <figure class="right">
+			      <div class="col-md-8" style="background-image:url('img/3.jpg');"></div>
+			      <div class="col-md-4" style="height:inherit;display:inline-block;">
+						  <article>
+						   <!--    <img src="img/profile.svg" alt="logo" class="mb-4">-->
+			        <p class="text-center">形象思维  使创新变得清晰生动<br />灵感思维 捕捉刹那的创意火花
+			     </p>
+						  </article>
+			      </div>
+			        
+			      </figure>
+			    <figure class="left">
+			      <div class="col-md-8" style="background-image:url('img/6.jpg');"></div>
+			      <div class="col-md-4" style="height:inherit;display:inline-block;">
+						  <article>
+						    <!--    <img src="img/profile.svg" alt="logo" class="mb-4">-->
+			        <p class="text-center">责任感是设计的原则<br />灵感是设计的升华</p>
+						  </article>
+			      </div>
+			    </figure>
+			  
+			  </div>
+			</section>
+			  
+			</div>
+
+			<div class="button-wrap">
+			  <button class="previous">Previous</button>
+			  <button class="next">Next</button>  
+			</div>
+	
+	<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript">
+		var counter = 0;
+		$('.next').on('click', function(){
+		  counter -= 90;
+		  var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
+		  $('#cube').css('transform', rotation);
+		});
+		$('.previous').on('click', function(){
+		  counter += 90;
+		  var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
+		  $('#cube').css('transform', rotation);
+		});
+	</script>
+	
+  		
+  		
+  	<!--头部3D播放图片-->	
+  	</div>
+  </div>
+  
+  <div id="navie1">	
+	<div id="navie2"><div id="navie3">
+	<ul id="main">
+<li><a href="roll.html">网站首页</a></li>
+<li><a href="projectintroduce.html">项目介绍</a></li>
+<li><a href="projecshow.html">作品展示</a></li>
+<li><a href="teacher.html">导师介绍</a></li>
+<li><a href="teammember.html">团队成员</a></li>
+<li><a href="contact.html">联系我们</a></li>
+ <div id="marker"></div>
+</ul></div>
+
+	</div>
+</div>		
+  
+  
+  
+	</div>
+	
+	<div id="qz_item02">
+		<div class="qz_top180">
+			<div class="qz_wrap">
+				<div class="qz_title">
+				<div class="title">
+  		 <div class="black1"></div><div class="circle1"><img src="img/23.png" width="10" height="10"></div>
+  		 <div class="ink"><div class="words">协会简介</div></div>
+  	<div class="circle2"><img src="img/23.png" width="10" height="10"></div>
+  	
+  	 <div class="black2"></div>
+  	 <div class="english">Studio Overview</div>
+  	
+  	</div> 
+				</div>
+				<div class="qz_ser">
+					<div id="introduce">
+  		<div id="smallwords">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由当代大学生及其优秀导师创立于制作网页、PS以及新媒体运营的工作室。用优秀的设计帮助企业创造具有影响力和价值的体验，创造超越竞争对手的品牌竞争力，以深度拓展设计的商业价值， 用设计的的力量使客户实现商业目标，用设计的力量驱动企业的持续发展。以
+品质和服务为核心竞争力;我们拥有<h2>高素质的团队、丰富的建站经验、专业化流程控制</h2>是行业优选服务商。提供领先的基于HTML5技术的响应式站点建设，打造中小企业
+电子商务化一站式服务产品提供商。专注网站建设服务，网站界面风格大方、程序源码简洁精炼;致力为个人及中小公司企业提供一条龙域名。</div>
+  		<!--<div id="bigwords"><div id="bbw">我们提供品牌网站设计，手机APP设计，响应式网站及微网站设计等解决方案！</div></div>-->
+  	</div>
+  	
+  	
+  	
+  	<div id="intropic"><div id="inpic"><img  src="img/1oo.png" width="294" height="294" style="z-index: 999;"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="qz_item03">
+		<div class="qz_top120">
+			<div class="qz_wrap">
+				<div class="qz_title" style="height: 110px;">
+				 <div class="title1">
+  		 <div class="black1"></div><div class="circle1"><img src="img/23.png" width="10" height="10"></div>
+  		 <div class="ink"><div class="words">服务范围</div></div>
+  	<div class="circle2"><img src="img/23.png" width="10" height="10"></div>
+  	
+  	 <div class="black2"></div>
+  	 <div class="english">Service Scope</div>
+  	
+  	</div> 
+
+				
+				</div>
+				<div class="qz_ser">
+					<div class="service"><div class="brandweb"><div class="cols">
+    <div class="col" ontouchstart="this.classList.toggle('hover');">
+      <div class="container">
+        <div class="front" style="background-image: url(img/9.png)">
+          <div class="inner">
+            <p style="font-size: 20px;">Brand</p>
+                  <span style="font-size: 18px;">Website</span>
+          </div>
+        </div>
+        <div class="back" style="border-radius: 75px;">
+          <div class="inner">
+       <img src="img/lightbulb14.png" width="75" height="80">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ </div> </div>
+	<div class="downwords">中高端网站品牌定制</div>
+	</div>
+ 
+ 
+ 
+	<div class="service"><div class="brandweb"> <div class="cols">
+    <div class="col" ontouchstart="this.classList.toggle('hover');">
+      <div class="container">
+        <div class="front" style="background-image: url(img/13.png)">
+          <div class="inner">
+            <p style="font-size: 20px;">Mobile</p>
+                  <span style="font-size: 18px;">Website</span>
+          </div>
+        </div>
+        <div class="back" style="border-radius: 75px;">
+          <div class="inner">
+       <img src="img/mobile179.png" width="75" height="80">
+          </div>
+        </div>
+      </div>
+    </div> 
+ </div></div>
+	<div class="downwords">移动端网站定制</div>
+	</div>
+	
+	
+	<div class="service">
+		<div class="brandweb"> <div class="cols">
+    <div class="col" ontouchstart="this.classList.toggle('hover');">
+      <div class="container">
+        <div class="front" style="background-image: url(img/8.png)">
+          <div class="inner">
+            <p style="font-size: 20px;">Wechat</p>
+                  <span style="font-size: 18px;">Develope</span>
+          </div>
+        </div>
+        <div class="back" style="border-radius: 75px;">
+          <div class="inner">
+       <img src="img/two105.png" width="75" height="80">
+          </div>
+        </div>
+      </div>
+    </div>
+ </div></div>
+	
+	<div class="downwords">微信平台整合</div>
+	
+	</div>
+	
+	
+	<div class="service"><div class="brandweb"> <div class="cols">
+    <div class="col" ontouchstart="this.classList.toggle('hover');">
+      <div class="container">
+        <div class="front" style="background-image: url(img/11.png)">
+          <div class="inner">
+            <p style="font-size: 20px;">Technical</p>
+                  <span style="font-size: 18px;">Support</span>
+          </div>
+        </div>
+        <div class="back" style="border-radius: 75px;">
+          <div class="inner">
+       <img src="img/gear21.png" width="75" height="80">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ </div> </div>
+	
+	<div class="downwords">技术支持</div>
+	</div>
+				
+						</div>
+					</div>
+					<div class="qz_contn qz_contnone cl">
+					</div>
+					<div class="qz_contn qz_contnone cl">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="qz_item04">
+		<div class="qz_top120">
+			<div class="qz_wrap">
+				<div class="qz_title" style="height: 110px;">
+					<div class="title2">
+  		 <div class="black1"></div><div class="circle1"><img src="img/23.png" width="10" height="10"></div>
+  		 <div class="ink"><div class="words">最新动态</div></div>
+  	<div class="circle2"><img src="img/23.png" width="10" height="10"></div>
+  	
+  	 <div class="black2"></div>
+  	 <div class="english">Latest News</div>
+  	
+  	</div> 		
+				</div>
+				<div class="qz_ser" style="height: 650px;">
+					
+
+        <div class="col-md-offset-3 col-md-6">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               移动互联网下的新机遇 - 移动端网站
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p>移动端网站是在充分衡量平台的有限性和机遇后为移动设备专门设计的。因为屏幕尺寸小和交互方式（触摸）和有限的网速(2G/3G)等局限性问题，决定了它必须具备方便快捷，加载速度快，可读性高等特点
+                            	。同时需要具备响应效果以适应各种尺寸的屏幕。 </p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               妙一工作坊常见问题及答疑 - 敬请垂阅
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <p>我们是一个由在校的志同道合的童鞋们组成的一个设计工作室团队，分别从事项目管理、设计师、前端工程师、程序开发。
+                            	我们的工作室成立于2017年，本校优秀导师胡慕海为该工作室负责人。</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              网站和微网站是不同的两个网站吗？是不是要所有信息都要上传两次？
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <p>是两个不同的网站，微网站是为了适配不同尺寸的手机和平板电脑专门设计开发的网站。但是两个网站都是使用同一个网站管理系统，所以信息是共通的，
+                            	一次操作两个网站全部同步更新。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                我们计划于2018年正式地成立协会！
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <p>互联网+时代来临, 传统企业转型互联网企业, 需要更多网页设计师来建造传统企业的互联网平台。为了满足当代就业需求并且为同学们提供一个专业并且知识丰富的自学平台，
+                            	该协会将由本工作室的学长学姐作为主要成员，招收更多对网页设计、ps、新媒体运营等方面感兴趣的学弟学妹们进行培训。欢迎加入我们！</p>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+
+
+			
+			
+			
+			
+		</div>
+			</div>
+	</div>
+	</div>
+	</div>
+	<div id="qz_item05">
+		</div>
+	</div>
+	<div id="qz_item06">
+		<div id="bottom1">
+	<div id="bottom2">Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 © 您的网站名称 未经许可 严禁复制沪ICP备XXXXXX号  </div>
+</div>
+	</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<!--
+	作者：1515166255@qq.com
+	时间：2018-02-17
+	描述：滚动效应
+-->
+	<script>
+		$(document).ready(function(){
+		  $(".qz_caselist ul li").hover(function(){
+		    $(this).find("span").stop().fadeToggle("200");
+		  });
+		});
+		$(document).ready(function(){
+		  $(".qz_newslist ul li").hover(function(){
+		    $(this).find(".qz_newsp").stop().slideToggle("600");
+		  });
+		});
+	</script>
+	<script type="text/javascript">
+		var qzhead=$("#qz_item01").height();
+		$(window).scroll(function(){
+			var topScr=$(window).scrollTop();
+			if (topScr>=qzhead) {
+				$(".qz_menubg").addClass("qz_menuadd");
+			}else{
+				$(".qz_menubg").removeClass("qz_menuadd");
+			}
+		})
+	</script>
+	<script>
+	  $(function(){
+	   var AllHet = $(window).height();
+	   var mainHet= $('.qz_menu').height();
+	   var fixedTop = (AllHet - mainHet)/2
+	 //  $('div.qz_menu').css({top:fixedTop+'px'}); 
+	   $('div.qz_menu li').click(function(){
+			var ind = $('div.qz_menu li').index(this)+1;
+			var topVal = $('#qz_item0'+ind).offset().top;
+			$('body,html').animate({scrollTop:topVal},500)
+		})
+	   $(window).scroll(scrolls)
+	   scrolls()
+	   function scrolls(){
+		   var f1,qi2,qi3,qi4,qi5,qi6,qi7;
+		   var fixRight = $('div.qz_menu li');
+		   var fixazxc = $('qz_bgbg div');
+		   var sTop = $(window).scrollTop();
+			   qi1 = $('#qz_item01').offset().top;
+			   qi2 = $('#qz_item02').offset().top;
+			   qi3 = $('#qz_item03').offset().top;
+			   qi4 = $('#qz_item04').offset().top;
+			   qi5 = $('#qz_item05').offset().top;
+			   qi6 = $('#qz_item06').offset().top;
+		   
+			
+		   if(sTop>=qi1){
+			   fixRight.eq(0).addClass('cur').siblings().removeClass('cur');
+			   }
+		   if(sTop>=qi2-100){
+			   fixRight.eq(1).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item02').addClass('cur');
+			   }
+		   if(sTop>=qi3-100){
+			   fixRight.eq(2).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item03').addClass('cur');
+			   }
+		   if(sTop>=qi4-100){
+			   fixRight.eq(3).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item04').addClass('cur');
+			   }
+		   if(sTop>=qi5-100){
+			   fixRight.eq(4).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item05').addClass('cur');
+			   }
+		   if(sTop>=qi6-100){
+			   fixRight.eq(5).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item06').addClass('cur');
+			   }
+	     }
+	   })
+	</script>
+	<script type="text/javascript">
+		$(function () {
+		   $('.qz_ttab ul.qz_casenav li').click(function(){
+		        //获得当前被点击的元素索引值
+		        var Index = $(this).index();
+				//给菜单添加选择样式
+			    $(this).addClass('active').siblings().removeClass('active');
+				//显示对应的div
+				$('.qz_ttab').children('div').eq(Index).show().siblings('div').hide();
+		   
+		   });
+		});
+	</script> 
+
+
+
+
+
+</html>

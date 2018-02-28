@@ -1,0 +1,109 @@
+/*九宫格结构*/
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+  margin-bottom: 0px;
+}
+ 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ 
+.col {
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+ width: 300px;
+ height: 400px;
+ float: left;
+ margin-left: 5px;
+}
+
+ 
+.col:nth-child(2) {
+ width: 500px;
+}
+ 
+.col:nth-child(4) {
+ width: 500px;
+}
+ 
+.col:nth-child(3) + .col:nth-child(3) {
+  width: 500px;
+}
+ 
+.photo-container {
+background-repeat: no-repeat;  
+  background-size: 100% 100%; ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+.photo-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.col:hover .photo-container {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+ 
+.slide {
+  background: rgba(25, 1, 21, 0.8);
+  padding: 0 1.5rem;
+}    
+
+/*鼠标悬浮产生方向感的css*/       
+  .col {
+  overflow: hidden;
+  position: relative;
+}
+ 
+.slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  -webkit-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+  transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+  visibility: hidden;
+  will-change: transform;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+ 
+.row:hover ~ .row .slide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.row:hover .slide {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.row:hover .col:hover ~ .col .slide {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.row:hover .col:hover .slide {
+  -webkit-transform: none;
+          transform: none;
+  visibility: visible;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}                 

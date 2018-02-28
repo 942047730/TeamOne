@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>作品展示</title>
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+  <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/outline.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<style>
+.header-navigation {
+position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #343A40;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   list-style: none;
+  text-transform: uppercase;
+
+
+
+}              
+/*导航菜单向上滑动*/
+.slideUp {
+  /* -webkit-transform: translateY(-100px);
+		  transform: translateY(-100px);*/
+		  -webkit-transform: translateY(-100px);
+		  -ms-transform: translateY(-100px);
+		  -o-transform: translateY(-100px);
+		  transform: translateY(-100px);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}
+/*导航菜单向下滑动*/
+.slideDown {
+    /*-webkit-transform: translateY(0);
+		  transform: translateY(0);*/
+		  -webkit-transform: translateY(0);
+		  -ms-transform: translateY(0);
+		  -o-transform: translateY(0);
+		  transform: translateY(0);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}  
+#main {
+
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:1200px;
+  height: 60px;
+overflow:hidden;
+z-index: 999;
+margin-top: 0px;
+margin-left: 130px;
+}
+
+#main li{
+float:left;
+height: 32px;
+font-size:20px ;
+display: inline-block;
+  position: relative;
+   cursor: pointer;
+  z-index: 5;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#marker{
+	margin-bottom: 0px;
+	height: 60px;
+	 background-color:rgba(255,255,255,0.4)!important; /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=40);
+}
+ul li a:link,a:visited{
+	
+	color:#FFF;text-decoration:none;
+text-transform:uppercase;
+}
+ul li a:hover,a:active{
+color:#B3D7FF;
+
+}
+#header{
+	z-index: 999;
+}
+#bottom1{
+	margin-top: 200px;
+}
+
+	  #qz_item01{ height:90px;display: block; background:url(img/bg3.jpg)  no-repeat top center fixed;position: relative;}
+	  #qz_item02{ height:700px;display: block; background:url(img/bg3.jpg)}
+	  #qz_item03{ height:900px;display: block; background:url(img/bg3.jpg)}
+	  #qz_item04{ height:1000px;display: block; background:url(img/bg3.jpg)}
+      #qz_item05{ height:150px;display: block; background:url(img/bg3.jpg)}
+     
+		.qz_title{display:block;text-align: center;position: relative;margin-left:-2000px; transition:0.7s all; -webkit-transition:0.7s all; -moz-transition:0.7s all; -o-transition:0.7s all;}
+		.qz_title h2{height:50px;line-height:50px;font-size: 36px;color: #333;}
+		.qz_title p{display: block;height:30px;line-height: 30px;font-size: 16px;color: #666}
+		.qz_title span{height:2px;width:100px;display: block;background:#3C5464;margin:20px auto;}
+
+		
+		.cur .qz_title{margin-left:0;}
+
+		.qz_titlef{display:block;text-align: center;position: relative;margin-left:-2000px; transition:0.7s all; -webkit-transition:0.7s all; -moz-transition:0.7s all; -o-transition:0.7s all;}
+		.qz_titlef h2{height:50px;line-height:50px;font-size: 36px;color: #fff;}
+		.qz_titlef p{display: block;height:30px;line-height: 30px;font-size: 16px;color: #fff}
+		.qz_titlef span{height:2px;width:100px;display: block;background:#3C5464;margin:20px auto;}
+		.cur .qz_titlef{margin-left:0;}
+
+
+		.qz_bg1{display: block;width:1000px;margin:0px auto 0;padding-top:200px;}
+		.qz_bg1 h2{font-size:36px;font-weight: bold;height:50px;line-height: 50px;text-align: center;color: #fff;margin-bottom:20px;letter-spacing:8px;}
+		.qz_bg1 h2 strong{color: #3C5464;}
+		.qz_bg1 p{text-align: center;font-size: 16px;line-height: 30px;color: #fff;}
+		.qz_ser{display: block;margin-top:50px;}
+
+		.qz_ser li{margin-left: 60px;float: left;width:154px;text-align: center;padding:0 15px;position:relative;margin-top:180px; opacity: 0;transition:1s all; -webkit-transition:1s all; -moz-transition:1s all; -o-transition:1s all;}
+		.qz_ser li img{border-radius: 90px;border:3px solid #fff;margin-bottom:10px;}
+		.qz_ser li img:hover{border:3px solid #3C5464;background: #3C5464;}
+		.qz_ser li h3{height:26px;line-height: 26px;font-size: 16px;font-weight: bold;color: #666;margin-bottom: 5px;}
+		.qz_ser li h3 p{font-size: 14px;line-height: 24px;}
+
+		.cur .qz_ser li.on1{transition-delay:0.5s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on2{transition-delay:1s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on3{transition-delay:1.5s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on4{transition-delay:2s;margin-top:0; opacity: 1;}
+		.cur .qz_ser li.on5{transition-delay:2.5s;margin-top:0; opacity: 1;}
+
+		.qz_ttab > span{display: block;}
+		.qz_ttab ul.qz_casenav{width:1120px;display: block;text-align: center; opacity: 0;margin-top:-100px; transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_ttab ul.qz_casenav li{text-align:center;height:30px;line-height:30px;font-size:14px;cursor:pointer;color: #666;display: inline-block;*zoom:1;*display: inline;border-radius: 5px;margin:0 10px;padding:0 10px;}
+		.qz_ttab ul.qz_casenav li.active{color:#3C5464;}
+		.qz_contn{width: 1120px;margin:0 auto;display: block;padding:30px 0;}
+		.qz_contnone{display:none;}
+		.qz_caselist{display: block;width:1120px;opacity:0;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_caselist ul{display: block;width:1140px;}
+		.qz_caselist li{width:265px;height:192px;display: block;margin-right:20px;margin-bottom:20px;float: left;position: relative;}
+		.qz_caselist li p{width:265px;height: 192px;display: block;overflow: hidden;}
+		.qz_caselist li img{width:265px;height: 192px;display: block;  transition: 0.4s all; -webkit-transition: 0.4s all; -moz-transition: 0.4s all; -o-transition: 0.4s all;}
+		.qz_caselist li:hover p > img
+			{
+				-webkit-transform: scale(1.2);
+		        -moz-transform: scale(1.2);
+		        -o-transform: scale(1.2);
+		        -ms-transform: scale(1.2);
+			}
+		.qz_caselist li span{background: url(img/iconw.png);width:265px;height:192px;position: absolute;left: 0;top:0;display: none;padding:40px 20px;}
+		.qz_caselist li span h3{color: #fff;font-size: 16px;font-weight: bold;text-align: center;line-height: 24px;}
+		.qz_caselist li span h5{color: #fff;font-size: 12px;line-height: 20px;text-align: center;margin: 10px 0;}
+		.qz_caselist li span img{width: 40px;height:40px;margin:0 auto;border:2px solid #fff;border-radius: 90px;}
+		
+
+		.cur .qz_ttab ul.qz_casenav{opacity:1;margin-top:0;transition-delay:0.8s;margin:40px auto 20px;}
+		.cur .qz_caselist{transition-delay:1.5s;opacity:1;}
+
+
+
+		.qz_about{display:block;width:1120px;margin-top: 50px;overflow: hidden;}
+		.qz_about img{float: left;width:560px;margin-right:20px;margin-left:-1000px;position: relative;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_about span{float:right;width:540px;margin-right:-1500px;position: relative;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.qz_about span h3{line-height:30px;font-size: 24px;margin-bottom:10px;}
+		.qz_about span p{line-height: 26px;margin-bottom: 30px;}
+
+		.cur .qz_about img{margin-left:0;transition-delay:1s;opacity:1;}
+		.cur .qz_about span{margin-right:0;transition-delay:1s;opacity:1;}
+
+		.qz_newslist{display: block;width:1240px;margin-top:50px;opacity:0;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;}
+		.cur .qz_newslist{opacity:1;transition-delay:1s;}
+		.qz_newslist ul{width: 1240px;}
+		.qz_newslist li {margin-left:25px;float: left;width:225px;height:253px;padding:20px;display: block;margin-right: 20px;margin-bottom:20px;background: #f7f7f7;color: #333;position: relative;}
+		.qz_newslist li img{width: 225px;margin-bottom:10px;}
+		.qz_newslist li h3{font-size: 16px;height:30px;line-height: 30px;overflow: hidden;width:100%;display: block;}
+		.qz_newslist li span{font-size:46px;font-weight: bold;height:50px;line-height: 50px;position: relative;color: #333;}
+		.qz_newslist li span strong{position: absolute;left:40px;bottom:5px;color: #333;font-size: 20px;height:20px;line-height: 20px;width:30px;text-align: left;background:#eee;font-weight: normal;}
+		.qz_newslist li .qz_newsp{position: absolute;left:0;bottom:0;background:#3C5464;color: #fff;padding:20px;width:225px;height:253px;display: none;}
+		.qz_newslist li .qz_newsp h4{font-size: 18px;font-weight: bold;line-height: 24px;height:24px;overflow: hidden;display: block;}
+		.qz_newslist li .qz_newsp em{background: #fff;width:60px;height:1px;display: block;margin:10px 0;}
+		.qz_newslist li .qz_newsp p{display: block;font-size: 14px;line-height: 24px;height:215px;overflow: hidden;}
+
+
+		.qz_cont{display: block;margin-top:50px;}
+		.qz_contc{display: block;text-align: center;border-bottom:1px solid #fff;margin:0px auto 30px;width:800px;padding-bottom:30px;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;opacity:0;}
+
+		.cur .qz_contc{opacity:1;transition-delay:0s;}
+
+		.qz_contc li{display: inline-block;text-align: center;margin:0 20px;width:200px;height:150px;color: #fff;}
+		.qz_contc li img{height:30px;width:30px;display: block;margin:0 auto 20px;}
+		.qz_contc li p{display: block;height:100px;line-height: 25px;}
+		.qz_contc li strong{display: block;font-size:18px;line-height: 30px;}
+
+		.qz_contb{margin:0 auto;width:800px;transition: 1.5s all; -webkit-transition: 1.5s all; -moz-transition: 1.5s all; -o-transition: 1.5s all;opacity:0;}
+		.cur .qz_contb{margin:0 auto;opacity:1;transition-delay:1s;}
+		.qz_contb h3{display: block;text-align: center;font-size: 28px;color: #fff;margin-bottom:40px;}
+		.qz_contb span{width:840px;display: block;margin-bottom:20px;}
+		.qz_contb span input{width:358px;float: left;margin-right:40px;border:0;border:1px solid #f1f1f1;font-size: 14px;padding:10px;height:24px;line-height: 24px;border-radius:5px;}
+		.qz_contb textarea{width:778px;border:1px solid #f1f1f1;padding:10px;line-height:24px;border-radius: 5px;}
+		.qz_contb button{display: block;width:150px;border:0;border-radius: 5px;margin:20px auto;height:40px;line-height: 40px;cursor: pointer;color: #fff;background: #3C5464;}
+
+		.qz_lookj{display: block;width:150px;background:#3C5464;height:40px;line-height: 40px;color: #fff;text-align: center;border-radius: 10px;font-size: 16px;margin:0 auto;}
+		.qz_lookj:hover{color: #fff;}
+
+</style>
+<body>
+	<div id="qz_item01">
+		 <header class="header-navigation" id="header">
+  <nav>
+  	
+	
+    <ul id="main">
+
+<li><a href="roll.html">网站首页</a></li>
+<li><a href="projectintroduce.html">项目介绍</a></li>
+<li><a href="projecshow.html">作品展示</a></li>
+<li><a href="teacher.html">导师介绍</a></li>
+<li><a href="teammember.html">团队成员</a></li>
+<li><a href="contact.html">联系我们</a></li>
+ <div id="marker"></div>
+</ul>
+ 
+</nav>
+</header>
+ </div>
+	<div id="qz_item02">
+		<div class="qz_top180">
+			<div class="qz_wrap">
+				<div class="qz_title">
+					<h2>成员作品</h2>
+					<span></span>
+					<p>每一位协会成员悉心打造，成就更好的工作站</p>
+				</div>
+				<div class="qz_ser">
+					<ul class="cl" style="margin-left: 30px;">
+						<li class="on1">
+							<img src="img/头像1.jpg" width="120" height="120" name="images" >
+							<h3>朱冲</h3>
+							<p>互联网网站建设综合服务、企事业数字门户建设</p>
+						</li>
+						<li class="on2">
+							<img src="img/头像2.jpg" width="120" height="120" name="images">
+							<h3>罗文利</h3>
+							<p>互联网网站建设综合服务、互联网金融平台建设</p>
+						</li>
+						<li class="on3">
+							<img src="img/头像3.jpg" width="120" height="120" name="images" >
+							<h3>彭春雪</h3>
+							<p>企业形象策划是对企业形象进行包装和推广，通过创意设计和精心策划，塑造企业独特的网站</p>
+						</li>
+						<li class="on4">
+							<img src="img/头像4.jpg" width="120" height="120" name="images" >
+							<h3>郭佳佳</h3>
+							<p>活动全案策划是指组织各类活动从前期准备到活动结束的全案策划，从网页设计执行到监控的全程</p>
+						</li>
+						<li class="on5">
+							<img src="img/头像5.jpg"  width="120" height="120" name="images" >
+							<h3>朱钧</h3>
+							<p>网站美化及功能设计、营销型网站建</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="qz_item03">
+		<div class="qz_top120">
+			<div class="qz_wrap">
+				<div class="qz_title">
+					<h2>优秀作品</h2>
+					<span></span>
+					<p>每一个作品都是众人精心打造</p>
+				</div>
+				<div class="qz_ttab cl">
+					<span>
+						<ul class="qz_casenav cl">
+							<li class="active">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+								&emsp;&emsp;&emsp;Web建设 &emsp;&emsp;|</li>
+							<li>网站建设 &emsp;&emsp;|</li>
+							<li>PS设计</li>
+						</ul>
+					</span>
+					<div class="qz_contn cl">
+						<div class="qz_caselist">
+							<ul class="cl">
+								<li>
+									<a href="img/img1.jpg" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img1.jpg" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="img/img2.png" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img2.png" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+								
+								<li>
+									<a href="img/img3.jpg" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img3.jpg" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="img/img4.jpg" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img4.jpg" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="img/img5.jpg" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img5.jpg" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="img/img6.jpg" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img6.jpg" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="img/img7.jpg" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img7.jpg" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="img/img8.jpg" data-lightbox="example-set"  rel="lightbox">
+										<p><img src="img/img8.jpg" alt=""></p>
+										<span>
+											<h3>妙一文化传播</h3>
+											<h5>Web建设</h5>
+											<img src="img/icon2.png" alt="" />
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="qz_contn qz_contnone cl">
+					</div>
+					<div class="qz_contn qz_contnone cl">
+					</div>
+					<a href="case.html" class="qz_lookj"  target="_blank" >+查看更多+</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="qz_item04">
+		<div class="qz_top120">
+			<div class="qz_wrap">
+				<div class="qz_title">
+					<h2>新媒体运营作品</h2>
+					<span></span>
+					<p>不断的更新，不断的美化，创造更悦目的图片</p>
+				</div>
+				<div class="qz_newslist">
+					<ul class="cl" style="margin-left: 60px;">
+						<li>
+							<img src="img/img1.jpg" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+								<p>推文简介</p>
+                              </div>
+							</a>
+						</li>
+						<li>
+							<img src="img/img2.png" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+								<p>推文简介</p>
+                              </div>
+						</li>
+						<li>
+							<img src="img/img3.jpg" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+                                   <p>推文简介</p>
+                              </div>
+						</li>
+						<li>
+							<img src="img/img4.jpg" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+	                            <p>推文简介</p>
+                              </div>
+						</li>
+						<li>
+							<img src="img/img5.jpg" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+                               <p>推文简介</p>
+                              </div>
+						</li>
+						<li>
+							<img src="img/img6.jpg" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+								<p>推文简介</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/img7.jpg" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+								<p>推文简介</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/img8.jpg" alt="" />
+							<h3>妙一工作站</h3>
+							<span>
+								23
+								<strong>07</strong>
+							</span>
+							<div class="qz_newsp">
+								<h4>妙一工作站</h4>
+								<em></em>
+								<p>推文简介</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<a href="news.html" class="qz_lookj"  target="_blank" style="margin-top: 625px;z-index: 999;">+查看更多+</a>
+			</div>
+	</div>
+	<div id="qz_item05">
+	</div>
+	<div id="qz_item06">
+		<div id="bottom1">
+	<div id="bottom2">Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 © 您的网站名称 未经许可 严禁复制沪ICP备XXXXXX号  </div>
+</div>
+	</div>
+</body>
+<!--
+	作者：1515166255@qq.com
+	时间：2018-02-17
+	描述：导航栏
+
+-->
+<script type="text/javascript">
+		
+		var new_scroll_position = 0;
+		var last_scroll_position;
+		var header = document.getElementById("header");
+
+		window.addEventListener('scroll', function(e) {
+		  last_scroll_position = window.scrollY;
+
+		  // Scrolling down
+		  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+		    // header.removeClass('slideDown').addClass('slideUp');
+		    header.classList.remove("slideDown");
+		    header.classList.add("slideUp");
+
+		  // Scrolling up
+		  } else if (new_scroll_position > last_scroll_position) {
+		    // header.removeClass('slideUp').addClass('slideDown');
+		    header.classList.remove("slideUp");
+		    header.classList.add("slideDown");
+		  }
+
+		  new_scroll_position = last_scroll_position;
+		});</script>
+<!--
+	作者：1515166255@qq.com
+	时间：2018-02-17
+	描述：滚动效应
+-->
+	<script>
+		$(document).ready(function(){
+		  $(".qz_caselist ul li").hover(function(){
+		    $(this).find("span").stop().fadeToggle("200");
+		  });
+		});
+		$(document).ready(function(){
+		  $(".qz_newslist ul li").hover(function(){
+		    $(this).find(".qz_newsp").stop().slideToggle("600");
+		  });
+		});
+	</script>
+	<script type="text/javascript">
+		var qzhead=$("#qz_item01").height();
+		$(window).scroll(function(){
+			var topScr=$(window).scrollTop();
+			if (topScr>=qzhead) {
+				$(".qz_menubg").addClass("qz_menuadd");
+			}else{
+				$(".qz_menubg").removeClass("qz_menuadd");
+			}
+		})
+	</script>
+	<script>
+	  $(function(){
+	   var AllHet = $(window).height();
+	   var mainHet= $('.qz_menu').height();
+	   var fixedTop = (AllHet - mainHet)/2
+	 //  $('div.qz_menu').css({top:fixedTop+'px'}); 
+	   $('div.qz_menu li').click(function(){
+			var ind = $('div.qz_menu li').index(this)+1;
+			var topVal = $('#qz_item0'+ind).offset().top;
+			$('body,html').animate({scrollTop:topVal},500)
+		})
+	   $(window).scroll(scrolls)
+	   scrolls()
+	   function scrolls(){
+		   var f1,qi2,qi3,qi4,qi5,qi6,qi7;
+		   var fixRight = $('div.qz_menu li');
+		   var fixazxc = $('qz_bgbg div');
+		   var sTop = $(window).scrollTop();
+			   qi1 = $('#qz_item01').offset().top;
+			   qi2 = $('#qz_item02').offset().top;
+			   qi3 = $('#qz_item03').offset().top;
+			   qi4 = $('#qz_item04').offset().top;
+			   qi5 = $('#qz_item05').offset().top;
+			   qi6 = $('#qz_item06').offset().top;
+		   
+			
+		   if(sTop>=qi1){
+			   fixRight.eq(0).addClass('cur').siblings().removeClass('cur');
+			   }
+		   if(sTop>=qi2-100){
+			   fixRight.eq(1).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item02').addClass('cur');
+			   }
+		   if(sTop>=qi3-100){
+			   fixRight.eq(2).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item03').addClass('cur');
+			   }
+		   if(sTop>=qi4-100){
+			   fixRight.eq(3).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item04').addClass('cur');
+			   }
+		   if(sTop>=qi5-100){
+			   fixRight.eq(4).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item05').addClass('cur');
+			   }
+		   if(sTop>=qi6-100){
+			   fixRight.eq(5).addClass('cur').siblings().removeClass('cur');
+			   $('#qz_item06').addClass('cur');
+			   }
+	     }
+	   })
+	</script>
+	<script type="text/javascript">
+		$(function () {
+		   $('.qz_ttab ul.qz_casenav li').click(function(){
+		        //获得当前被点击的元素索引值
+		        var Index = $(this).index();
+				//给菜单添加选择样式
+			    $(this).addClass('active').siblings().removeClass('active');
+				//显示对应的div
+				$('.qz_ttab').children('div').eq(Index).show().siblings('div').hide();
+		   
+		   });
+		});
+	</script> 
+</html>

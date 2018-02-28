@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>联系我们</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+  <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/outline.css"/>
+  <link rel="stylesheet" type="text/css" href="css/contactus.css"/>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=wf2cdbHMTRhYVoXNlEOkZkPr5fnDuzT3"></script>
+	<style>
+  	.header-navigation {
+position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #343A40;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   list-style: none;
+  text-transform: uppercase;
+
+
+
+}              
+/*导航菜单向上滑动*/
+.slideUp {
+  /* -webkit-transform: translateY(-100px);
+		  transform: translateY(-100px);*/
+		  -webkit-transform: translateY(-100px);
+		  -ms-transform: translateY(-100px);
+		  -o-transform: translateY(-100px);
+		  transform: translateY(-100px);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}
+/*导航菜单向下滑动*/
+.slideDown {
+    /*-webkit-transform: translateY(0);
+		  transform: translateY(0);*/
+		  -webkit-transform: translateY(0);
+		  -ms-transform: translateY(0);
+		  -o-transform: translateY(0);
+		  transform: translateY(0);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}  
+#main {
+
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:1200px;
+  height: 60px;
+overflow:hidden;
+z-index: 999;
+margin-top: 0px;
+margin-left: 130px;
+}
+
+#main li{
+float:left;
+height: 32px;
+font-size:20px ;
+display: inline-block;
+  position: relative;
+   cursor: pointer;
+  z-index: 5;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#marker{
+	margin-bottom: 0px;
+	height: 60px;
+	 background-color:rgba(255,255,255,0.4)!important; /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=40);
+}
+ul li a:link,a:visited{
+	
+	color:#FFF;text-decoration:none;
+text-transform:uppercase;
+}
+ul li a:hover,a:active{
+color:#B3D7FF;
+
+}
+#header{
+	z-index: 999;
+}
+
+</style>
+	
+	
+	</head>
+	
+	<body style="background-position:center center;
+	 background:url(img/bg3.jpg);
+  background-repeat: repeat ;">
+			
+		 <header class="header-navigation" id="header">
+  <nav>
+  	
+	
+    <ul id="main">
+
+<li><a href="roll.html">网站首页</a></li>
+<li><a href="projectintroduce.html">项目介绍</a></li>
+<li><a href="projecshow.html">作品展示</a></li>
+<li><a href="teacher.html">导师介绍</a></li>
+<li><a href="teammember.html">团队成员</a></li>
+<li><a href="contact.html">联系我们</a></li>
+ <div id="marker"></div>
+</ul>
+ 
+</nav>
+</header>
+		
+	
+		
+		<div id="border2" style="height: 1460px;">
+		<div id="border3">
+			<div id="studioname">妙一·工作坊</div>
+		<div id="specific">
+			<p>&bull;&nbsp;&nbsp;本工作室创建于2017年 &nbsp;&nbsp;位于湖北省武汉市江夏区阳大道1号&nbsp;&nbsp;&bull;</p>
+			<p>&bull;&nbsp;&nbsp;独有智能响应技术&nbsp;&nbsp;针对不同终端进行独立设计&nbsp;&nbsp;视觉展示效果更佳&nbsp;&nbsp;无需同时加载多套页面&nbsp;&nbsp;提升访问效率&nbsp;&nbsp;&bull;</p>
+			<p>&bull;&nbsp;&nbsp;创造力提供网页设计规划&nbsp;&nbsp;始终践行“品质至上”的核心价值观&nbsp;&nbsp;&bull;</p>
+			<p>&bull;&nbsp;&nbsp;努力成为一家让客户尊重&nbsp;&nbsp;成员热爱的工作室！&nbsp;&nbsp;&bull;</p>
+		</div>
+		<div id="contactway">
+			<div class="way"><img src="img/map65.png" width="160" height="160" style="margin-left: 35px;"><p class="iconname">地址</p></div>
+			<div class="way"><img src="img/call25.png" width="125" height="125" style="margin-left: 55px;margin-top: 25px;"><p class="iconname" style="margin-top: 10px;">电话</p></div>
+			<div class="way"><img src="img/two105.png" width="160" height="160" style="margin-left: 35px;"><p class="iconname">微信</p></div>
+			<div class="way"><img src="img/envelope2.png" width="140" height="140" style="margin-left: 46px;margin-top: 12px;"><p class="iconname" style="margin-top: 9px;">邮件</p></div>
+			
+			<div class="waycontent">湖北省武汉市江夏区阳光大道一号武汉纺织大学七栋教学楼</div>
+			<div class="waycontent">联系电话：400-0000-XXX</div>
+			<div class="waycontent">管理学院公众号：XXXXXXX</div>
+			<div class="waycontent">妙一工作坊：168XXXX@163.com</div>
+			
+		</div>
+		
+		<div class="weibo"><img src="img/10.jpg" width="60" height="60" style="border-radius: 30px;"><a href="#" class="forweibo">微博：https://www.weibo.com</a></div>
+		<div class="weibo"><img src="img/12.jpg" width="60" height="60" style="border-radius: 30px;"><a href="#" class="forweibo">官网：https://www.miaoyi.com</a></div>
+		
+		
+		
+		</div>
+		 <div style="width:1200px;height:500px;border:#ccc solid 1px;font-size:12px" id="map"></div>	
+		</div>
+		
+<div id="bottom1">
+	<div id="bottom2">Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 © 您的网站名称 未经许可 严禁复制沪ICP备XXXXXX号  </div>
+</div>
+	
+	
+	</body>
+	
+	<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(114.348014,30.38339),19);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"7栋教学楼514工作室",title:"妙一工作坊",imageOffset: {width:30,height:3},position:{lat:30.383207,lng:114.347785}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+  <script type="text/javascript">
+		
+		var new_scroll_position = 0;
+		var last_scroll_position;
+		var header = document.getElementById("header");
+
+		window.addEventListener('scroll', function(e) {
+		  last_scroll_position = window.scrollY;
+
+		  // Scrolling down
+		  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+		    // header.removeClass('slideDown').addClass('slideUp');
+		    header.classList.remove("slideDown");
+		    header.classList.add("slideUp");
+
+		  // Scrolling up
+		  } else if (new_scroll_position > last_scroll_position) {
+		    // header.removeClass('slideUp').addClass('slideDown');
+		    header.classList.remove("slideUp");
+		    header.classList.add("slideDown");
+		  }
+
+		  new_scroll_position = last_scroll_position;
+		});
+	</script>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>导师介绍</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+  <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/outline.css"/>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" href="css/border2.css" /> />
+  <style>
+  	.header-navigation {
+position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #343A40;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   list-style: none;
+  text-transform: uppercase;
+
+
+
+}              
+/*导航菜单向上滑动*/
+.slideUp {
+  /* -webkit-transform: translateY(-100px);
+		  transform: translateY(-100px);*/
+		  -webkit-transform: translateY(-100px);
+		  -ms-transform: translateY(-100px);
+		  -o-transform: translateY(-100px);
+		  transform: translateY(-100px);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}
+/*导航菜单向下滑动*/
+.slideDown {
+    /*-webkit-transform: translateY(0);
+		  transform: translateY(0);*/
+		  -webkit-transform: translateY(0);
+		  -ms-transform: translateY(0);
+		  -o-transform: translateY(0);
+		  transform: translateY(0);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}  
+#main {
+
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:1200px;
+  height: 60px;
+overflow:hidden;
+z-index: 999;
+margin-top: 0px;
+margin-left: 130px;
+}
+
+#main li{
+float:left;
+height: 32px;
+font-size:20px ;
+display: inline-block;
+  position: relative;
+   cursor: pointer;
+  z-index: 5;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#marker{
+	margin-bottom: 0px;
+	height: 60px;
+	 background-color:rgba(255,255,255,0.4)!important; /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=40);
+}
+ul li a:link,a:visited{
+	
+	color:#FFF;text-decoration:none;
+text-transform:uppercase;
+}
+ul li a:hover,a:active{
+color:#B3D7FF;
+
+}
+#header{
+	z-index: 999;
+}
+/*导师介绍效果*/
+#rw1{height: 150px;
+                 width: 550px;
+                 text-align: center;
+                 border-radius:5em;
+                 float: left;
+                 margin-left: 30px;
+                 margin-bottom: 30px;
+                border: 0.5px solid #253D47;
+                 
+                 }
+            #rw1 img{
+            	width: 120px;
+            	height: 120px;
+            	border-radius:5em;
+                margin-left: 18px;
+                margin-top: 15px;
+                float: left;
+            	}
+            .p1{
+            	float: left;
+            	width: 70px;
+            	height: 20px;
+            	margin-left: 20px;
+            	font-family:  FZYaoti;
+            	font-size: 23px;
+            	color: #253D47;
+            	margin-top: 6px;
+            }
+            .p2{
+            	float: left;
+            	width: 130px;
+            	height: 20px;
+            	margin-left: 20px;
+            	font-family: "微软雅黑";
+            	font-size: 18px;
+            	color:#456D7A;
+            		margin-top: 6px;
+            }
+            .p3{
+            	width: 350px;
+            	height: 60px;
+            	float: left;
+            	font-size: 15px;
+            	margin-left: 24px;
+            	margin-top: 13px;
+            	color:#253D47;
+            	text-align: left;
+            }
+
+</style>
+ 
+ 
+ 
+	</head>
+	
+	<body style="background-position:center center;
+	 background:url(img/bg3.jpg);
+  background-repeat: repeat ;">
+		
+		 <header class="header-navigation" id="header">
+  <nav>
+  	
+	
+    <ul id="main">
+
+<li><a href="roll.html">网站首页</a></li>
+<li><a href="projectintroduce.html">项目介绍</a></li>
+<li><a href="projecshow.html">作品展示</a></li>
+<li><a href="teacher.html">导师介绍</a></li>
+<li><a href="teammember.html">团队成员</a></li>
+<li><a href="contact.html">联系我们</a></li>
+ <div id="marker"></div>
+</ul>
+ 
+</nav>
+</header>
+		
+		<div id="border2" style="margin-top: 130px;height:650px;width: 1190px;">
+			<div id="rw1">
+			<img src="img/hmh.jpg" />
+			<p class="p1">胡慕海</p>
+			<p class="p2">资深网页设计师</p>
+			<p class="p3">2007年从事教学以及教学管理工作,拥有丰富的项目实战经验、授课经验以及学员管理、教学管理经验、授课经验以及,教学管理经验,实战经验十分丰富。​​​​</p>
+		</div>
+		<div id="rw1">
+			<img src="img/user-male-icon.png" />
+			<p class="p1">李老师</p>
+			<p class="p2">资深网页设计师</p>
+			<p class="p3">2007年从事教学以及教学管理工作,拥有丰富的项目实战经验、授课经验以及学员管理、教学管理经验、授课经验以及,教学管理经验,实战经验十分丰富。​​​​</p>
+		</div>
+		<div id="rw1">
+			<img src="img/user-male-icon.png" />
+			<p class="p1">王老师</p>
+			<p class="p2">资深网页设计师</p>
+			<p class="p3">2007年从事教学以及教学管理工作,拥有丰富的项目实战经验、授课经验以及学员管理、教学管理经验、授课经验以及,教学管理经验,实战经验十分丰富。​​​​</p>
+		</div>
+		<div id="rw1">
+			<img src="img/user-male-icon.png" />
+			<p class="p1">张老师</p>
+			<p class="p2">资深网页设计师</p>
+			<p class="p3">2007年从事教学以及教学管理工作,拥有丰富的项目实战经验、授课经验以及学员管理、教学管理经验、授课经验以及,教学管理经验,实战经验十分丰富。​​​​</p>
+		</div>
+		<div id="rw1">
+			<img src="img/user-male-icon.png" />
+			<p class="p1">张老师</p>
+			<p class="p2">资深网页设计师</p>
+			<p class="p3">2007年从事教学以及教学管理工作,拥有丰富的项目实战经验、授课经验以及学员管理、教学管理经验、授课经验以及,教学管理经验,实战经验十分丰富。​​​​</p>
+		</div>
+		<div id="rw1">
+			<img src="img/user-male-icon.png" />
+			<p class="p1">张老师</p>
+			<p class="p2">资深网页设计师</p>
+			<p class="p3">2007年从事教学以及教学管理工作,拥有丰富的项目实战经验、授课经验以及学员管理、教学管理经验、授课经验以及,教学管理经验,实战经验十分丰富。​​​​</p>
+		</div></div>
+		<div id="bottom1" >
+	<div id="bottom2">Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 © 您的网站名称 未经许可 严禁复制沪ICP备XXXXXX号  </div>
+
+		
+		
+		
+
+	<script type="text/javascript">
+		
+		var new_scroll_position = 0;
+		var last_scroll_position;
+		var header = document.getElementById("header");
+
+		window.addEventListener('scroll', function(e) {
+		  last_scroll_position = window.scrollY;
+
+		  // Scrolling down
+		  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+		    // header.removeClass('slideDown').addClass('slideUp');
+		    header.classList.remove("slideDown");
+		    header.classList.add("slideUp");
+
+		  // Scrolling up
+		  } else if (new_scroll_position > last_scroll_position) {
+		    // header.removeClass('slideUp').addClass('slideDown');
+		    header.classList.remove("slideUp");
+		    header.classList.add("slideDown");
+		  }
+
+		  new_scroll_position = last_scroll_position;
+		});
+	</script>
+
+	
+	
+	</body>
+</html>

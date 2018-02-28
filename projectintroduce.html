@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>项目介绍</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+  <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/outline.css"/>
+  <link rel="stylesheet" type="text/css" href="css/project.css"/>
+  <link rel="stylesheet" href="css/ninesquares.css" />
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<link href="css/demo1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.easing.js" type="text/javascript"></script>
+<script src="js/scroller.js" type="text/javascript"></script>
+<script src="js/init.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <style>
+  	.header-navigation {
+position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #343A40;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   list-style: none;
+  text-transform: uppercase;
+
+
+
+}              
+/*导航菜单向上滑动*/
+.slideUp {
+  /* -webkit-transform: translateY(-100px);
+		  transform: translateY(-100px);*/
+		  -webkit-transform: translateY(-100px);
+		  -ms-transform: translateY(-100px);
+		  -o-transform: translateY(-100px);
+		  transform: translateY(-100px);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}
+/*导航菜单向下滑动*/
+.slideDown {
+    /*-webkit-transform: translateY(0);
+		  transform: translateY(0);*/
+		  -webkit-transform: translateY(0);
+		  -ms-transform: translateY(0);
+		  -o-transform: translateY(0);
+		  transform: translateY(0);
+		  /*transition: transform .5s ease-out;*/
+		  -webkit-transition: transform .5s ease-out;
+		  -o-transition: transform .5s ease-out;
+		  transition: transform .5s ease-out;
+}  
+#main {
+
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:1200px;
+  height: 60px;
+overflow:hidden;
+z-index: 999;
+margin-top: 0px;
+margin-left: 130px;
+}
+
+#main li{
+float:left;
+height: 32px;
+font-size:20px ;
+display: inline-block;
+  position: relative;
+   cursor: pointer;
+  z-index: 5;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+#marker{
+	margin-bottom: 0px;
+	height: 60px;
+	 background-color:rgba(255,255,255,0.4)!important; /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=40);
+}
+ul li a:link,a:visited{
+	
+	color:#FFFFFF;text-decoration:none;
+text-transform:uppercase;
+}
+ul li a:hover,a:active{
+color:#B3D7FF;
+
+}
+#header{
+	z-index: 999;
+}
+#bottom1{
+	margin-top: 300px;
+}
+
+</style>
+	</head>
+	
+	<body style="background-position:center center;
+	 background:url(img/bg3.jpg);
+  background-repeat: repeat ;">
+		
+		 <header class="header-navigation" id="header">
+  <nav>
+  	
+	
+    <ul id="main">
+
+<li><a href="roll.html">网站首页</a></li>
+<li><a href="projectintroduce.html">项目介绍</a></li>
+<li><a href="projecshow.html">作品展示</a></li>
+<li><a href="teacher.html">导师介绍</a></li>
+<li><a href="teammember.html">团队成员</a></li>
+<li><a href="contact.html">联系我们</a></li>
+ <div id="marker"></div>
+</ul>
+ 
+</nav>
+</header>
+		
+		
+		
+		
+		
+		
+		
+<div id="border2"  >
+  <div class="part1">
+  	
+	 <div class="top">
+	     <div class="text">前端开发</div> 
+	     <span style="height: 2px;width: 100px;display: block;background: #3C5464;margin-left: auto;margin-right: auto;margin-top: 15px;"></span>
+	 </div><!--title结束-->
+ 
+	 <div class="part1-card"><a href="http://www.680.com/jianzhan/wv_7609474.html" target="_blank"><img src="img/pro.jpg" width="318" height="220px" />
+	 <div class="preview" title="点击预览"><img src="img/eye100.png" width="100" height="100" style="margin-left: -48px;margin-top: 50px;"></div>
+		  <div class="littletitle">国学院网站建设</div><br/></a>
+		  <div class="introduction">简介：用黑白作为主色调，整个页面符合国学院的风格，素雅恬静。</div>
+	 </div><!--part1-card结束-->
+	 
+	 <div class="part1-card"><a href="http://www.680.com/jianzhan/wv_7356470.html" target="_blank"><img src="img/pro2.jpg" width="318" height="220px" />
+		  <div class="preview" title="点击预览"><img src="img/eye100.png" width="100" height="100" style="margin-left: -48px;margin-top: 50px;"></div>
+		  <div class="littletitle">电商网站建设</div><br/></a>
+		  <div class="introduction">简介：采用扁平化设计，BANNER采用全屏轮播，使用黑色和桔色搭配烘托出科技，庄重的质感。</div>
+	 </div><!--part1-card结束-->
+	 
+	 <div class="part1-card"><a href="http://www.680.com/jianzhan/wv_6500594.html" target="_blank"><img src="img/pro3.jpg" width="318" height="220px" />
+	      <div class="preview" title="点击预览"><img src="img/eye100.png" width="100" height="100" style="margin-left: -48px;margin-top: 50px;"></div>
+	      <div class="littletitle">贸易网站建设</div><br/></a>
+	      <div class="introduction">简介：色彩蓝色为基调，突出公司科学，严谨，合理的经营理念。</div>
+	 </div><!--part1-card结束-->
+	 
+	 <div class="part1-card"><a href="http://www.680.com/jianzhan/wv_6277704.html" target="_blank"><img src="img/pro4.png" width="318" height="220px" />
+	                       <div class="preview" title="点击预览"><img src="img/eye100.png" width="100" height="100" style="margin-left: -48px;margin-top: 50px;"></div>
+	                       <div class="littletitle">摄影论坛建设</div><br/></a>
+	                        <div class="introduction">简介：网站风格简约时尚为主，具备时代气息，论坛首页以摄影图片为主、优雅简约不失时尚的摄影交流论坛。 </div>
+	 </div><!--part1-card结束-->
+	 <div class="part1-card"><a href="https://gjj455.github.io/First/tourist.html" target="_blank"><img src="img/pro5.png" width="318" height="220px" />
+	 						<div class="preview" title="点击预览"><img src="img/eye100.png" width="100" height="100" style="margin-left: -48px;margin-top: 50px;"></div>
+	 						<div class="littletitle">公益网站建设</div><br/></a>
+	                        <div class="introduction">简介：整个网站简洁明快的，主题色是象征着冷静、博爱与广阔的蓝色，烘托志愿者们热情，可靠的形象。</div>
+	 </div><!--part1-card结束-->
+	 <div class="part1-card"><a href="https://gjj455.github.io/First/tourist.html" target="_blank"><img src="img/pro6.png" width="318" height="220px" />
+	 						<div class="preview" title="点击预览"><img src="img/eye100.png" width="100" height="100" style="margin-left: -48px;margin-top: 50px;"></div>
+	 						<div class="littletitle">登录界面设计</div><br/></a>
+	                        <div class="introduction">简介：登录的页面简单大方，又具有美感。</div>
+	 </div>
+  </div><!--part1结束-->
+     
+  <div class="part2">
+	 <div class="top">
+	       <div class="text">新媒体运营</div>  <span style="height: 2px;width: 100px;display: block;background: #3C5464;margin-left: auto;margin-right: auto;margin-top: 15px;"></span> 
+	 </div><!--title结束-->
+	<!-- <div class="pic-group">
+	       <img src="img/media (1).PNG" width="270px" height="380px" />
+	       <img src="img/media (3).PNG" width="270px" height="380px" />
+	 </div><!--pic-group结束-->
+	<!-- <div class="media-text">
+	     	<div class="wenzi">新媒体运营，是通过现代化互联网手段，通过利用微信、微博、贴吧等新兴媒体平台工具进行产品宣传、推广、产品营销的一系列运营手段。通过策划品牌相关的优质、高度传播性的内容和线上活动，向客户广泛或者精准推送消息，提高参与度，提高知名度，从而充分利用粉丝经济，达到相应营销目的。
+	        </div><!--wenzi结束-->
+	<!-- </div><!--media-text结束-->
+<div class="container">
+  <div class="row">
+  	
+    <div class="col">
+      <div class="photo-container" >
+      	<img src="img/media (1).PNG" width="315" height="400" />
+      </div>
+     
+      <div class="slide">
+        <p >电商手机微信助手营销功能，高效地把买家集中在微信群中，建立属于自己的客户资源池，不用引流量，培养自己的精准客源</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="photo-container" >	<img src="img/timg.jpg" width="515" height="400" /></div>
+     
+      <div class="slide">
+        <p>高效实现内容的自动化高效传播，数十倍扩大信息覆盖人群，成倍提高工作效果。移动互联网时代，消费者的行为习惯已经彻底改变，唯有跟上趋势，才能不断发展。</p>
+      </div>
+    </div>
+     <div class="col">
+      <div class="photo-container">	<img src="img/media (3).PNG" width="315" height="400" /></div>
+      
+      <div class="slide">
+        <p>专业运营团队、广告投入成本太大，做自己的媒体，零成本做广告。</p>
+      </div>
+ </div>
+    
+  </div>
+</div>             
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+  </div> <!--part2结束-->
+ 
+  <div id="content">
+     <div class="top">
+	     <div class="text">标志设计</div>  <span style="height: 2px;width: 100px;display: block;background: #3C5464;margin-left: auto;margin-right: auto;margin-top: 15px;"></span>
+	 </div><!--title结束-->
+		<div class="scroller demo1">
+
+			<div class="inside">
+
+				<a href="#"><img src="img/logo1.png" alt="title #1" /></a>
+	            <a href="#"><img src="img/logo2.png" alt="title #2" /></a>
+				 <a href="#"><img src="img/logo3.png" alt="title #3" /></a>
+				  <a href="#"><img src="img/logo4.jpg" alt="title #4" /></a>
+				  <a href="#"><img src="img/logo1.png" alt="title #1" /></a>
+	            <a href="#"><img src="img/logo2.png" alt="title #2" /></a>
+				 <a href="#"><img src="img/logo3.png" alt="title #3" /></a>
+				  <a href="#"><img src="img/logo4.jpg" alt="title #4" /></a>
+				   <a href="#"><img src="img/logo3.png" alt="title #3" /></a>
+				  <a href="#"><img src="img/logo4.jpg" alt="title #4" /></a>
+				  <a href="#"><img src="img/logo1.png" alt="title #1" /></a>
+	            <a href="#"><img src="img/logo2.png" alt="title #2" /></a>
+				 <a href="#"><img src="img/logo3.png" alt="title #3" /></a>
+				  <a href="#"><img src="img/logo4.jpg" alt="title #4" /></a>
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+		
+<div id="bottom1">
+	<div id="bottom2">Copyright © 2009-2011,www.xxxxxx.com,All rights reserved  版权所有 © 您的网站名称 未经许可 严禁复制沪ICP备XXXXXX号  </div>
+</div>
+
+<script type="text/javascript">
+		
+		var new_scroll_position = 0;
+		var last_scroll_position;
+		var header = document.getElementById("header");
+
+		window.addEventListener('scroll', function(e) {
+		  last_scroll_position = window.scrollY;
+
+		  // Scrolling down
+		  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+		    // header.removeClass('slideDown').addClass('slideUp');
+		    header.classList.remove("slideDown");
+		    header.classList.add("slideUp");
+
+		  // Scrolling up
+		  } else if (new_scroll_position > last_scroll_position) {
+		    // header.removeClass('slideUp').addClass('slideDown');
+		    header.classList.remove("slideUp");
+		    header.classList.add("slideDown");
+		  }
+
+		  new_scroll_position = last_scroll_position;
+		});
+	</script>
+
+	</body>
+</html>

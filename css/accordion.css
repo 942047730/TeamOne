@@ -1,0 +1,89 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 0 15px 10px;
+     background-color:rgba(255,255,255,0); /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=0);
+}
+
+#accordion .panel-heading{
+    padding: 0;
+    border-radius: 30px;
+    background-color:rgba(255,255,255,0); /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=0);
+}
+#accordion .panel-title a{/*长条的颜色*/
+    display: block;
+    padding: 12px 20px 12px 50px;
+   background-color:rgba(255,255,255,0); /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=0);
+    color: #253D47;
+    text-align: center;
+    font-family:  FZYaoti ;
+    border: 0.5px solid #314D62;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+     font-size: 20px;
+    width: 1000px;
+    height: 60px;
+}
+#accordion .panel-title a.collapsed{/*section字点击之后的颜色*/
+	background-color:rgba(255,255,255,0); /*实现FF背景透明，文字不透明*//*其他浏览器未兼容！*/
+    filter:Alpha(opacity=0);
+    color: #253D47;
+    text-align: center;
+    font-family:  FZYaoti ;
+     font-weight: 550;
+    font-size: 25px;
+    border: 0.5px solid #314D62;
+}
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{/*前部圆形的颜色*/
+    content: "\f107";
+    font-family: fontawesome;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background:url(../img/26.png);
+    background-repeat: no-repeat;  
+  background-size: 100% 100%; 
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+    
+}
+#accordion .panel-title a.collapsed:after{/*圆内长方形的颜色*/
+    content: "\f105";
+    background:#B6DEC5;
+    
+    color: #439462;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+#accordion .panel-body{/*菜单内容的颜色*/
+    padding: 20px 25px 10px 9px;
+    background: transparent;
+    font-size: 14px;
+    color: #B21F2D;
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+}
+#accordion .panel-body p{/*菜单内容前需虚线的颜色*/
+    padding-left: 25px;
+    border-left: 1px dashed #E4606D;
+} 
+           

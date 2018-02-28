@@ -1,0 +1,83 @@
+#border3{
+	width: 1200px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	
+
+}
+#studioname{
+	
+	width: 600px;
+	height: 120px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 140px;
+	font-family: FZYaoti;
+	font-size: 40px;
+	color: #253D47;
+	background: url(../img/fgx.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#specific{
+	width: 800px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	text-align: center;
+	
+	color: #253D47;
+}
+#contactway{
+	width: 1200px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	opacity: 0.85;
+	
+}
+.weibo{
+	float: left;
+	width: 400px;
+	height:70px;
+	margin-left:160px;
+	margin-top:50px;
+	
+	
+}
+.way{
+	width: 230px;
+	height: 210px;
+	float: left;
+	margin-left: 55px;
+	
+}
+.iconname{
+	text-align: center;
+	font-size: 20px;
+	color: #16181B;
+}
+.waycontent{
+	margin-top: 10px;
+	width: 230px;
+	height: 70px;
+	float: left;
+	margin-left: 55px;
+	text-align: center;
+	color: #16181B;
+	font-size: 15px;
+}
+.forweibo{
+	color:#16181B;
+	margin-left: 40px;
+	font-size: 16px;
+}
+#border2 #border3 .weibo .forweibo:visited{
+	color: #16181B;
+}
